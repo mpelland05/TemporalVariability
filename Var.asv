@@ -1,0 +1,24 @@
+%opt.type = 'mean_var';
+%tseries_n = niak_normalize_tseries(tseries,opt);
+
+aa = corrcoef(tseries);
+nn = corrcoef(tseries_n);
+
+ mm = repmat(mean(mini_t),10,1)
+ mm2 = repmat(mean(mini_t)',1,10)
+ 
+ 
+ %low
+ [b,a] = butter(2,.2,'low');
+ ll = filtfilt(b,a,aa);
+ 
+ %high 
+ 
+ 
+ %Compare SC and EB on variation for different frequencies.
+ 
+ for gg = 1:length(groups),
+     for pp = 1:length(),
+        Results{gg}(pp,:) = std(tseries);
+     end
+ end

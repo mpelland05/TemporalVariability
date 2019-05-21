@@ -1,0 +1,5 @@
+1. Run preprocess to obtain results without FD.
+
+2. Use ExtratTseries4WindowAnalysis
+
+3. SlidingWindow_Analysis.
